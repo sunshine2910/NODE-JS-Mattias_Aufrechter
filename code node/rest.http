@@ -1,0 +1,70 @@
+GET http://localhost:3000/vehicules/1
+
+###
+GET http://localhost:3000/owners/1
+
+###
+GET http://localhost:3000/vehicules/2
+
+###
+GET http://localhost:3000/vehicule
+
+###
+DELETE http://localhost:3000/vehicules/2
+
+###
+POST http://localhost:3000/vehicules
+Content-Type: application/json
+
+{
+    "model":"3008",
+    "marque":"peugeot",
+    "dateFabrication":"1960-01-24"
+}
+
+
+###
+POST http://localhost:3000/owners
+Content-Type: application/json
+
+{
+     "firstName": "Paul",
+     "lastName":"Goldman",
+     "birthDate":"2000-10-10",
+     "LicenseType":"avion"
+}
+
+###
+POST http://localhost:3000/concessionaires
+Content-Type: application/json
+
+{
+    "address": "3 route de lamorlaye",
+    "proprietaire":"Mattias"
+}
+
+
+###
+PUT http://localhost:3000/owners/1
+Content-Type: application/json
+
+{
+    "firstName": "Mattias"
+}
+###
+PUT http://localhost:3000/vehicules/1
+Content-Type: application/json
+
+{
+    "model": "3008",
+    "marque":"peugeot",
+    "dateFabrication":"2020-10-01"
+}
+
+###
+PUT http://localhost:3000/concessionaires/1
+Content-Type: application/json
+
+{
+    "address": "Mattias"
+}
